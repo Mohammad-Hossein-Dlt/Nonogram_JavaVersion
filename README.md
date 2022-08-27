@@ -289,7 +289,7 @@ Then using the ReadData class, the information is read from the address of the g
         }
     }
 ```
-- SaveSettings class : save SettingsModel data in database
+- SaveSettings class : Save SettingsModel data in database
 - ReadSettings class: Reed data from database and stores in SettingsData
 - SettingsManager class: Stored database address as File data type, and if database not exist calls SaveSettings.Save(), if database exist calls ReadSettings.read()
 ```java
