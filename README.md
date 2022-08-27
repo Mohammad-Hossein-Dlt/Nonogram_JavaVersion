@@ -77,7 +77,7 @@ But the functions of the two buttons located in GameHistory loadGame and remove 
 This is how mainWindow reaches loadGame and remove buttons in GameHistory:
 
 - history button load HistoryList class and give it mainWindow
-- HistoryList during making each game item (each item is instance of GameHistory) give mainWindow to the item (GameHistory)
+- HistoryList during making each item (each item is instance of GameHistory) give mainWindow to the item (GameHistory)
 - And finally, the main window is given to the loadgame and remove buttons function
 ## How does GamesFoldersManager calss work?
 Explanation about addresses and methods of the GamesFoldersManager class.
