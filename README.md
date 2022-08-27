@@ -8,7 +8,7 @@ This project is pure java and no framework or library is used
 
 ## Main Goal
 The main goal of the project was to strengthen object orientation, and the use of files and media such as sound
-# About the project
+# About important parts of the project
 ## How does the content of the game page change?
 The whole project is a Jframe and its content is changed with the reload method in the MainFrame class
 
