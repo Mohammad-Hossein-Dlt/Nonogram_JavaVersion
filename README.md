@@ -302,11 +302,11 @@ Then using the ReadData class, the information is read from the address of the g
     }
 ```
 ## Screenshots
-![my img](readme_img/LightTheme_Menu.PNG)       ![my img](readme_img/DarkTheme_Menu.PNG)
+![my img](readme_img/LightTheme_Menu.jpg)       ![my img](readme_img/DarkTheme_Menu.jpg)
 
 ![my img](readme_img/LightTheme_GamePad.jpg)        ![my img](readme_img/DarkTheme_GamePad.jpg)
         
-![my img](readme_img/LightTheme_History.PNG)        ![my img](readme_img/DarkTheme_History.PNG)
+![my img](readme_img/LightTheme_History.jpg)        ![my img](readme_img/DarkTheme_History.jpg)
 
-![my img](readme_img/LightTheme_Settings.PNG)       ![my img](readme_img/DarkTheme_Settings.PNG)
+![my img](readme_img/LightTheme_Settings.jpg)       ![my img](readme_img/DarkTheme_Settings.jpg)
 
