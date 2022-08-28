@@ -102,14 +102,14 @@ Explanation about addresses and methods of the GamesFoldersManager class.
     public static File WrongClicked;
     public static File CorrectClicked;
 ```
-- folderList -> A list that has the folder address of all games that sorted by name.
+- folderList: A list that has the folder address of all games that sorted by name.
 
 The sortFolders method returns this list and stored in folderList
 ```java
     public static ArrayList<File> folderList = (Files.exists(GamesDataFolder.toPath()) && GamesDataFolder.list().length != 0 )? sortFolders() : new ArrayList<>();
 ```
 ### Sorting Methods
-- sortFolders Method -> Sort game folders by the number of their name
+- sortFolders Method: Sort game folders by the number of their name
 ```java
     private static ArrayList<File> sortFolders(){
         ArrayList<Integer> indexList = new ArrayList<>();
@@ -121,7 +121,7 @@ The sortFolders method returns this list and stored in folderList
     }
 ```
 ### Create And load Methods
-- load Method -> load game filse address by takes a File input, and returns the loading result
+- load Method: load game filse address by takes a File input, and returns the loading result
 ```java
     public static boolean load(File folder){
         if(folder != null) {
@@ -135,7 +135,7 @@ The sortFolders method returns this list and stored in folderList
         return GameFolder != null;
     }
 ```
-- isFinished Method -> It takes the folder address of a game in file data type and checks whether the game is finished by reading the GameConfig.txt file and finding the Result value.
+- isFinished Method: It takes the folder address of a game in file data type and checks whether the game is finished by reading the GameConfig.txt file and finding the Result value.
 ```java
     private static boolean isFinished(File folder){
         boolean finished;
@@ -150,7 +150,7 @@ The sortFolders method returns this list and stored in folderList
         return finished;
     }
 ```
-- lastUnfinished Method -> Find the last unfinished game and return its folder with the file data type
+- lastUnfinished Method: Find the last unfinished game and return its folder with the file data type
 ```java
     private static File lastUnfinished(){
         File lastUnfinished = null;
@@ -159,7 +159,7 @@ The sortFolders method returns this list and stored in folderList
         return lastUnfinished;
     }
 ```
-- lastPath method -> When the user runs the game, Game History is null, so this method finds the folder address of the last unfinished game by called lastUnfinished method and calls the load method.
+- lastPath method: When the user runs the game, Game History is null, so this method finds the folder address of the last unfinished game by called lastUnfinished method and calls the load method.
 
 But while using the game, if the user runs another unfinished game, this method loads the address of the same game and prevents it from loading another address with the result of the isFinished method.
 ```java
@@ -169,7 +169,7 @@ But while using the game, if the user runs another unfinished game, this method 
         return GameFolder != null;
     }
 ```
-- createNew Method -> Creating main folder ( GameData ) or new game folder with its files with the result of load method and add GameFolder to folderList
+- createNew Method: Creating main folder ( GameData ) or new game folder with its files with the result of load method and add GameFolder to folderList
 ```java
     public static void createNew(){
         if (Files.notExists(GamesDataFolder.toPath())) {
@@ -226,7 +226,7 @@ But while using the game, if the user runs another unfinished game, this method 
     }
 ```
 ### Remove Methods
-- removeData Method -> First delete game files then delete the file itself then remove the file from folderList
+- removeData Method: First delete game files then delete the file itself then remove the file from folderList
 ```java
     public static void removeData(File folder){
         for(File file: folder.listFiles()) file.delete();
@@ -234,7 +234,7 @@ But while using the game, if the user runs another unfinished game, this method 
         folderList.remove(folder);
     }
 ```
-- removeAllData Method -> Delete all games using removeData method
+- removeAllData Method: Delete all games using removeData method
 ```java
     public static void removeAllData(){
         for(File folder: GamesDataFolder.listFiles())
@@ -289,7 +289,7 @@ Then using the ReadData class, the information is read from the address of the g
         }
     }
 ```
-- SaveSettings class : Save SettingsModel data in database
+- SaveSettings class: Save SettingsModel data in database
 - ReadSettings class: Reed data from database and stores in SettingsData
 - SettingsManager class: Stored database address as File data type, and if database not exist calls SaveSettings.Save(), if database exist calls ReadSettings.read()
 ```java
