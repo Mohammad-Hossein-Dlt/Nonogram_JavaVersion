@@ -1,10 +1,11 @@
 
 # Nonogram Java Version
 
-Java gui puzzle game as a sample project with java
+### Java gui puzzle game as a sample project with java
 
 This project is pure java and no framework or library is used
 
+You can download and run the output of the project from the ExecutableOutput
 
 ## Main Goal
 The main goal of the project was to strengthen object orientation, and the use of files and media such as sound
